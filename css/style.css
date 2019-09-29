@@ -228,6 +228,10 @@ i {
     transition: 0.5s ease-out;
 }
 
+footer {
+    padding-top:2%;
+}
+
 /* ------------- */
 /* MEDIA QUERIES */
 /* ------------- */
@@ -255,6 +259,12 @@ i {
         padding:10% 5%;
         /* text-shadow: 2px 3px 5px black; */
     }
+    .item{
+        width:80%;
+    }
+    #projects {
+        padding-top:90px;
+    }
 }
 
 /* small screen i.e. iPhone 5 in portrait */
@@ -265,18 +275,30 @@ i {
     #my-avatar {
         height:30%;
     }
+    #projects {
+        padding-top:90px;
+    }
 }
 
 /* small screen i.e. iPhone 5 in landscape */
 @media (max-height:620px) {
     body{
-        font-size:0.5em;
+        font-size:0.7em;
     }
     #home{
         padding-top:5%;
     }
-    #projects{
-        padding-top:2%;
+    h1 {
+        font-size:1.5em;
+    }
+    #projects h2 {
+        /* font-size:1.5em; */
+    }
+    #contact {
+        padding-top:90px;
+    }
+    #contact h2 {
+        font-size:1.5em;
     }
     #skills{
         padding:0;
