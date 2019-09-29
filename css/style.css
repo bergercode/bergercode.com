@@ -291,14 +291,8 @@ footer {
     h1 {
         font-size:1.5em;
     }
-    #projects h2 {
-        /* font-size:1.5em; */
-    }
     #contact {
         padding-top:90px;
-    }
-    #contact h2 {
-        font-size:1.5em;
     }
     #skills{
         padding:0;
