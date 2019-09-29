@@ -16,7 +16,7 @@ body {
     position: absolute;
     padding:5px;
     margin-left:10%;
-    z-index: 1;
+    z-index: 2;
 }
 
 section{
@@ -42,6 +42,7 @@ section{
     height:80px;
     display: flex;
     justify-content: flex-end;
+    z-index: 1;
 }
 
 .navbar ul {
@@ -116,6 +117,7 @@ i {
 /* -------- */
 #projects {
     /* background:rgba(50,50,50,0.5); */
+    padding-top:1%;
     background: rgba(200,200,200,1);
     display: flex;
     flex-direction: column;
@@ -125,9 +127,9 @@ i {
 }
 
 #projects h2{
-    font-size:4em;
+    font-size:3em;
     position: relative;
-    top:-50px;
+    /* top:-20px; */
 }
 
 #projects div {
@@ -145,7 +147,7 @@ i {
     position: relative;
     display: flex;
     flex-direction: column;
-    top:50px;
+    /* top:50px; */
     font-size:1.2em;
 }
 
@@ -182,7 +184,7 @@ i {
 #contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background:rgba(10,10,100,0.2);
@@ -218,7 +220,7 @@ i {
 }
 
 #contact p{
-    padding:1em;
+    padding:10vh;
 }
 
 #contact i:hover{
@@ -266,12 +268,15 @@ i {
 }
 
 /* small screen i.e. iPhone 5 in landscape */
-@media (max-height:500px) {
+@media (max-height:620px) {
     body{
-        font-size:0.6em;
+        font-size:0.5em;
     }
     #home{
         padding-top:5%;
+    }
+    #projects{
+        padding-top:2%;
     }
     #skills{
         padding:0;
