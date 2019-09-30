@@ -29,7 +29,6 @@ section{
  left:0;
  height: 70%;
  width:auto;
-
 }
 
 /* ---------- */
@@ -232,6 +231,27 @@ footer {
     padding-top:2%;
 }
 
+#bye-avatar {
+    display: none;
+    position: fixed;
+    height: 50%;
+    width:auto;
+    bottom: 0;
+    right:1%;
+    animation-name: byebye;
+    animation-duration: 1s;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+@keyframes byebye {
+    0% {right:-200px;}
+    100%{right:1%;}
+}
+
+
 /* ------------- */
 /* MEDIA QUERIES */
 /* ------------- */
@@ -249,6 +269,10 @@ footer {
         margin-top:15px;     
     }
     #my-avatar {
+        height:35%;
+        z-index: 0;
+    }
+    #bye-avatar {
         height:40%;
         z-index: 0;
     }
@@ -275,6 +299,10 @@ footer {
     #my-avatar {
         height:30%;
     }
+    #bye-avatar {
+        height: 30%;
+    }
+
     #projects {
         padding-top:90px;
     }
