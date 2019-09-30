@@ -1,3 +1,5 @@
-# bergercode.com
-<h1>My Portfolio Website</h1>
-<p>Currently under construction</p>
+<h1 align="center">www.bergercode.com</h1>
+<h2 align="center">My Portfolio Website</h2>
+
+## My personal portfolio
+
