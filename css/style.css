@@ -83,7 +83,7 @@ section{
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 
 i {
@@ -95,7 +95,7 @@ i {
     display: flex;
     justify-content: space-evenly;
     width:60%;
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 #skills ul{
@@ -126,7 +126,7 @@ i {
 }
 
 #projects h2{
-    font-size:3em;
+    font-size:2.5em;
     position: relative;
     /* top:-20px; */
 }
@@ -281,7 +281,6 @@ footer {
     }
     #skills {
         padding:10% 5%;
-        /* text-shadow: 2px 3px 5px black; */
     }
     .item{
         width:80%;
@@ -317,7 +316,7 @@ footer {
         padding-top:5%;
     }
     h1 {
-        font-size:1.5em;
+        font-size:1.8em;
     }
     #contact {
         padding-top:90px;
