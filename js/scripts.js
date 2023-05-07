@@ -23,7 +23,7 @@ $(window).scroll(function() {
         // $("#bye-avatar").animate({left: "-=2px"});
     } else {
         // Hide the "bye-avatar" element
-        $("#bye-avatar").fadeOut();
+        $("#bye-avatar").fadeOut("slow");
         // You can uncomment the line below to animate the "bye-avatar" element
         // $("#bye-avatar").animate({left: "+=2px"});
     }
