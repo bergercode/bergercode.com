@@ -18,12 +18,12 @@ $(window).scroll(function() {
     // Check if the user has scrolled to the bottom of the page
     if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
         // Show the "bye-avatar" element
-        $("#bye-avatar").fadeIn();
+        // $("#bye-avatar").fadeIn();
         // You can uncomment the line below to animate the "bye-avatar" element
         // $("#bye-avatar").animate({left: "-=2px"});
     } else {
         // Hide the "bye-avatar" element
-        $("#bye-avatar").fadeOut("slow");
+        // $("#bye-avatar").fadeOut("slow");
         // You can uncomment the line below to animate the "bye-avatar" element
         // $("#bye-avatar").animate({left: "+=2px"});
     }
