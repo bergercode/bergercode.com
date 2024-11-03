@@ -15,7 +15,8 @@ body {
 }
 
 #logo {
-    width: 120px;
+    width: 10vw;
+    max-width: 120px;
     position: absolute;
     padding: 5px;
     margin-left: 5%;
@@ -24,13 +25,15 @@ body {
 
 section {
     min-height: 100vh;
+    padding: 20px;
 }
 
 #my-avatar {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 70%;
+    height: 50%;
+    max-height: 300px;
     width: auto;
 }
 
@@ -40,28 +43,29 @@ section {
 .navbar {
     background: #2b2b3c;
     position: fixed;
+    top: 0;
     width: 100%;
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     z-index: 1;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .navbar ul {
-    padding-right: 10px;
-    width: 40%;
+    padding-right: 5vw;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    margin-right: 5%;
 }
 
 .navbar a {
     color: #d1d1e0;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
     transition: color 0.3s, border-bottom 0.3s;
 }
 
@@ -84,24 +88,26 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 1.8em;
+    padding: 40px 20px;
     color: #ffffff;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 
 i {
     color: #00bcd4;
-    padding: 10px;
+    padding: 8px;
 }
 
 #skills {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 70%;
-    padding-top: 2em;
+    width: 90%;
+    padding-top: 1.5em;
 }
 
 #skills ul {
@@ -130,25 +136,24 @@ i {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 #projects h2 {
-    font-size: 2.5em;
-    position: relative;
+    font-size: 2em;
     color: #00bcd4;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #project-container {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    justify-items: center;
 }
 
 .item {
-    margin: 0.5em;
-    width: 28%;
     background: #1e1e2f;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
@@ -162,7 +167,6 @@ i {
 }
 
 .item img {
-    height: auto;
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
@@ -177,27 +181,28 @@ i {
     align-items: center;
     text-align: center;
     background: #1e1e2f;
-    font-size: 1.5em;
-    padding: 50px 0;
+    padding: 40px 10px;
+    font-size: 1.2em;
 }
 
 #contact h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #00bcd4;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #contact-links {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
 }
 
 #contact ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #contact a {
@@ -210,21 +215,12 @@ i {
     color: #00bcd4;
 }
 
-#contact i {
-    color: #00bcd4;
-}
-
 #contact p {
-    padding: 5vh;
-}
-
-#contact i:hover {
-    text-shadow: 0 0 10px #00bcd4;
-    transition: 0.5s ease-out;
+    margin: 20px 0;
 }
 
 footer {
-    padding-top: 2%;
+    padding: 20px;
     text-align: center;
     color: #d1d1e0;
 }
@@ -233,43 +229,41 @@ footer {
 /* MEDIA QUERIES */
 /* ------------- */
 
-/* iPad sized screen */
-@media (max-width: 900px) {
-    .navbar ul {
-        width: 60%;
-        margin-right: 5%;
-    }
+/* Medium-sized screens */
+@media (max-width: 768px) {
     #logo {
-        width: 70px;
-        margin-top: 15px;
+        width: 15vw;
     }
-    #my-avatar {
-        height: 50%;
-    }
-    .item {
+    .navbar ul {
         width: 80%;
     }
-}
-
-/* small screen i.e. iPhone 5 in portrait */
-@media (max-width: 500px) {
-    body {
-        font-size: 0.8em;
-    }
     #my-avatar {
-        height: 30%;
+        height: 40%;
     }
-    #projects {
-        padding-top: 90px;
+    h1 {
+        font-size: 2em;
+    }
+    #projects h2 {
+        font-size: 2em;
     }
 }
 
-/* small screen i.e. iPhone 5 in landscape */
-@media (max-height: 620px) {
+/* Small screens */
+@media (max-width: 480px) {
     body {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
-    #contact h2 {
-        font-size: 2.5em;
+    .navbar {
+        height: 60px;
+    }
+    #logo {
+        width: 20vw;
+        top: 10px;
+    }
+    #skills, #contact-links {
+        flex-direction: column;
+    }
+    #project-container {
+        grid-template-columns: 1fr;
     }
 }
