@@ -2,180 +2,172 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149261162-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-149261162-1');
-    </script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Daniel Berger">
+    <meta name="description" content="Portfolio of Daniel Berger. Coder, Designer, Ideator, and Nerd.">
     <meta name="google-site-verification" content="zWMFD_Y6VE-0UT-ABdiFlGV7g9tQ4av858gg0XxJLS4" />
-    <meta name="description" content="Portfolio of Daniel Berger. Coder, Design, Ideator and Nerd.">
-    <meta name="keywords" content="programmer, java, web developer, websites, bergercode, berger code, web designer, software engineer, html, html5, css, css3, jquery, brisbane">
+
+    <!-- Optional SEO & Mobile Enhancements -->
+    <meta name="theme-color" content="#0d6efd">
+    <link rel="canonical" href="https://www.bergercode.com/">
+
     <title>Daniel Berger's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
-    <img id="logo" src="images/dbLogo.png" alt="">
-    <nav class="navbar">
-        <ul>
-            <li>
-                <a id="home-nav" class="activeNav" href="#home">HOME</a>
-            </li>
-            <li>
-                <a id="projects-nav" href="#projects">PROJECTS</a>
-            </li>
-            <li>
-                <a id="contact-nav" href="#contact">CONTACT</a>
-            </li>
-        </ul>
-    </nav>
-    <section id="home">
-        <article>
-            <h1>Hi, I'm Daniel.</h1>
-            <p>Coder | Designer | Nerd</p>
-        </article>
-        <div id="skills">
-            <div class="skills">
-                <i class="fas fa-code fa-2x"></i>
-                <ul>
-                    <li>
-                        <h2>Coding</h2>
-                    </li>
-                    <li>Java</li>
-                    <li>Javascript</li>
-                    <li>SQL</li>
-                    <li>Python</li>
-                </ul>
-            </div>
-            <div class="skills">
-                <i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i>
+    <div class="container">
+        <section class="banner">
+            <img src="images/gibli.jpg" alt="" id="profile_photo">
+            <h1>Daniel Berger</h1>
+        </section>
+        <div class="divider"></div>
+        <!-- TAB LIST -->
+        <section class="tab-titles" role="tablist">
+            <button class="tab-links active-link" role="tab" aria-selected="true" aria-controls="panel-about"
+                onclick="opentab('about', event)">
+                About
+            </button>
 
-                <ul>
-                    <li>
-                        <h2>Design</h2>
-                    </li>
-                    <li>CSS3</li>
-                    <li>HTML5</li>
-                    <li>GIMP</li>
-                    <li>Inkscape</li>
-                </ul>
-            </div>
-            <div class="skills">
-                <i class="fas fa-jedi fa-2x"></i>
+            <button class="tab-links" role="tab" aria-selected="false" aria-controls="panel-certifications"
+                onclick="opentab('certifications', event)">
+                Certifications
+            </button>
 
-                <ul>
-                    <li>
-                        <h2>Nerd....</h2>
-                    </li>
-                    <li>Git</li>
-                    <li>Tech Support</li>
-                    <li>Gaming</li>
-                </ul>
-            </div>
-        </div>
+            <button class="tab-links" role="tab" aria-selected="false" aria-controls="panel-projects"
+                onclick="opentab('projects', event)">
+                Projects
+            </button>
 
-    </section>
+            <button class="tab-links" role="tab" aria-selected="false" aria-controls="panel-contact"
+                onclick="opentab('skills', event)">
+                Skills
+            </button>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div id="project-container">
-            <figure class="item">
-                <a href="https://bergercode.github.io/tribute-page/" target="_blank">
-                    <img src="images/bach.jpg" alt="Bach Tribute Page">
-                </a>
-                <figcaption>
-                    <h3>Bach Tribute</h3>
-                    <p>Tribute page for Johann Sebastian Bach</p>
-                </figcaption>
-            </figure>
-            <figure class="item">
-                <a href="https://boiling-plateau-39569.herokuapp.com/campgrounds" target="_blank">
-                    <img src="images/yelpcamp.jpg" alt="Yelp Camp Site">
-                </a>
-                <figcaption>
-                    <h3>Yelp Camp</h3>
-                    <p>Fictional camping website.</p>
-                </figcaption>
-            </figure>
-            <figure class="item">
-                <a href="https://bergercode.github.io/computer-quiz/" target="_blank">
-                    <img src="images/drFrankenstein.JPG" alt="Dr Frankenstein Quiz">
-                </a>
-
-                <figcaption>
-                    <h3>Dr Frankenstein's Computer Quiz</h3>
-                    <p>Website to teach students about computers.</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div id="github">
-            <a href="https://github.com/bergercode" target="_blank">
-                <i class="fab fa-github-square fa-4x"></i>
-            </a>
-            <p>Check out more on my Github...</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you would like to contact me about a future project please click one of the links below...</p>
-        <div id="contact-links">
+            <button class="tab-links" role="tab" aria-selected="false" aria-controls="panel-contact"
+                onclick="opentab('contact', event)">
+                Contact
+            </button>
+        </section>
+        <div class="divider"></div>
+        <!-- TAB PANELS -->
+         <!-- ABOUT -->
+        <section id="panel-about" class="tab-contents active-tab" role="tabpanel" aria-labelledby="tab-about">
             <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/danielberger1/" target="_blank">Linkedin</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/danielberger1/" target="_blank">
-                        <i class="fab fa-linkedin fa-4x"></i>
-                    </a>
-                </li>
+                <p>
+                    I’m a technology enthusiast with a background in customer service and technical support. I’ve worked
+                    with Kubernetes, cloud platforms (AWS & GCP), coding, Linux, SQL, API and SaaS support, and web
+                    development. I adapt quickly to new tools and keep customer outcomes at the center of everything I
+                    do. I’m especially interested in the potential of AI, machine learning, and quantum computing to
+                    solve real-world problems and push innovation forward.
+                </p>
             </ul>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="panel-certifications" class="tab-contents" role="tabpanel" aria-labelledby="tab-certifications">
+            <!-- LINUX -->
+            <div class="cert-card">
+                <div class="cert-badge">
+                    <img src="/images/lpic-1-certification.png"
+                        alt="AWS Cloud Practitioner" class="cert-image">
+                </div>
+                <h3 class="cert-title">Linux Certified Administrator - LPIC-1 </h3>
+                <p class="cert-caption">Linux Professional Institute</p>
+            </div>
+            <!-- KCNA -->
+            <div class="cert-card">
+                <div class="cert-badge">
+                    <img src="/images/kcna-kubernetes-and-cloud-native-associate.png"
+                        alt="AWS Cloud Practitioner" class="cert-image">
+                </div>
+                <h3 class="cert-title">Kubernetes and Cloud Native Associate </h3>
+                <p class="cert-caption">The Linux Foundation</p>
+            </div>
+            <!-- AWS CCP -->
+            <div class="cert-card">
+                <div class="cert-badge">
+                    <img src="/images/aws-certified-cloud-practitioner.png"
+                        alt="AWS Cloud Practitioner" class="cert-image">
+                </div>
+                <h3 class="cert-title">AWS Certified Cloud Practitioner</h3>
+                <p class="cert-caption">Amazon Web Services</p>
+            </div>  
+            <!-- GCP CDL -->
+            <div class="cert-card">
+                <div class="cert-badge">
+                    <img src="/images/cloud-digital-leader-certification.png"
+                        alt="AWS Cloud Practitioner" class="cert-image">
+                </div>
+                <h3 class="cert-title">Google Certified Cloud Digital Leader</h3>
+                <p class="cert-caption">Google Cloud Services</p>
+            </div>
+        </section>
+
+        <section id="panel-projects" class="tab-contents" role="tabpanel" aria-labelledby="tab-projects">
             <ul>
-                <li>
-                    <a href="mailto:bergercodedan@gmail.com">Email</a>
-                </li>
-                <li>
-                    <a href="mailto:bergercodedan@gmail.com">
-                        <i class="fas fa-envelope-square fa-4x"></i>
-                    </a>
-                </li>
+                <li><span>PALATE PILOT</span><br>AI Sommelier</li>
+                <li><span>Bach Tribute</span><br>2nd skifgadsgasdgasdfgasdgllset text</li>
+                <p>Content</p>
+                <p>more content</p>
             </ul>
+        </section>
+
+        <section id="panel-skills" class="tab-contents" role="tabpanel" aria-labelledby="tab-contact">
             <ul>
-                <li>
-                    <a href="https://github.com/bergercode" target="_blank">Github</a>
-                </li>
-                <li>
-                    <a href="https://github.com/bergercode" target="_blank">
-                        <i class="fab fa-github-square fa-4x"></i>
-                    </a>
-                </li>
+                <li>Customer Support<span> ***********-</span></li>
+                <li>Linux <span> ***********-</span></li>
+                <li>Customer Support<span> ***********-</span></li>
             </ul>
-        </div>
-        <footer>
-            Copyright &copy; 2019 by Daniel Berger
-        </footer>
-<!--         <img id="bye-avatar" src="images/myAvatarBye.png" alt="Daniel waving goodbye."> -->
-    </section>
+        </section>
 
-    <img id="my-avatar" src="images/myAvatar.png" alt="Daniel waving at you.">
+        <section id="panel-contact" class="tab-contents" role="tabpanel" aria-labelledby="tab-contact">
+            <ul>
+                <li><span>UI/UX</span><br>1st Skaill</li>
+                <li><span>Cloud</span><br>2nd skillset text</li>
+            </ul>
+        </section>
 
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
+        function opentab(tabname, event) {
+            // Includes Aria-Selected for screen readers
+            // REMOVE active states
+            for (let tablink of tablinks) {
+                tablink.classList.remove('active-link');
+                tablink.setAttribute("aria-selected", "false");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+                tabcontent.setAttribute("hidden", "true");
+            }
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/scripts.js"></script>
+            // ADD active states
+            event.currentTarget.classList.add('active-link');
+            event.currentTarget.setAttribute("aria-selected", "true");
+
+            let panel = document.getElementById("panel-" + tabname)
+                || document.getElementById(tabname); // fallback if you rename panels
+
+            panel.classList.add('active-tab');
+            panel.removeAttribute("hidden");
+        }
+    </script>
+
 </body>
 
 </html>
