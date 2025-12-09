@@ -80,7 +80,7 @@ body {
     margin-top: 10px;
     padding: 50px 10px;
     border-radius: 5%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     box-shadow:
         inset 6px 6px 10px rgba(200, 200, 200, 0.35),
         inset -6px -6px 10px rgba(25, 25, 25, 0.10);
