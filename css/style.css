@@ -1,3 +1,17 @@
+/* VARIABLES */
+:root {
+    --primary-color: #87CEEB;
+    /* --primary-color: #0072B1; */
+    /* --primary-colour:rgba(240,240,240,0.9); */
+    --text-color: white;
+    --container-radius: 10px;
+    --card-bg: rgb(50, 50, 50);
+    --box-shadow: 4px 4px 7px rgba(0, 0, 0, 1);
+    /* --container-colour: rgba(0,114,177,1); */
+    --container-colour:rgba(50,50,50, 0.5);
+}
+
+/* CSS */
 * {
     margin: 0;
     padding: 0;
@@ -10,22 +24,33 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* background-color: #d1d1e0; */
-    /* background-color: rgba(41, 137, 169, 0.5); */
-    background-color: #87CEEB;
-    /* background-color: white; */
-    /* color: black; */
+    background-color: var(--primary-color);
     color: white;
     display: flex;
     justify-content: center;
     align-self: center;
-    min-height: 50vh;
+    /* remove min-height if issues with animated tab-content */
+    min-height: 80vh;
 }
 
+
+/* banner */
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.left-panel {
+    /* background:red; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.right-panel {
+    /* background:blue; */
+    width: 70%;
 }
 
 .cert-badge {
@@ -34,13 +59,11 @@ body {
     width: 120px;
     height: 120px;
     background-color: rgb(250, 250, 250, 1);
-    border-radius: 10%;
+    border-radius: var(--container-radius);
 }
 
 .cert-badge img {
     width: 100px;
-    /* align-self: center; */
-
 }
 
 .cert-caption {
@@ -49,7 +72,7 @@ body {
 }
 
 .cert-card {
-    background: rgb(50, 50, 50, 1);
+    background: var(--card-bg);
     width: 250px;
     height: 200px;
     display: flex;
@@ -57,14 +80,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 10%;
-    color: white;
-    /* box-shadow:
-        inset 6px 6px 10px rgba(0,0,0,0.35),
-        inset -6px -6px 10px rgba(255,255,255,0.10);
-    
-    transition: 0.2s ease; */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    border-radius: var(--container-radius);
+    box-shadow: var(--box-shadow);
 }
 
 .cert-title {
@@ -73,17 +90,17 @@ body {
 }
 
 .container {
-    /* background:#499ac5; */
-    background-color: rgb(100, 100, 100, 0.7);
+    margin: 0 auto;
+    background-color: var(--container-colour);
     width: 80%;
     padding-top: 80px;
     margin-top: 10px;
     padding: 50px 10px;
-    border-radius: 5%;
-    /* max-width: 1200px; */
+    border-radius: var(--container-radius);
+    max-width: 1000px;
     box-shadow:
-        inset 6px 6px 10px rgba(200, 200, 200, 0.35),
-        inset -6px -6px 10px rgba(25, 25, 25, 0.10);
+        inset 5px 5px 2px rgba(200, 200, 200, 0.35),
+        inset -5px -5px 2px rgba(25, 25, 25, 0.10);
 
     transition: 0.2s ease;
 }
@@ -91,37 +108,20 @@ body {
 .divider {
     width: 100%;
     height: 1px;
-    /* thin line */
     background-color: rgba(255, 255, 255, 0.3);
-    /* subtle white/transparent */
     margin: 40px 0;
-    /* space above & below */
 }
 
-
-#panel-certifications {
+#panel-certifications,
+#panel-projects {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    /* spacing between cards */
-    width: 100%;
     justify-items: center;
-    /* <-- center cards in their columns  */
-    align-items: center;
-    /* <-- vertically center them in row if needed */
+    align-items: start;
 }
 
 #panel-certifications.active-tab {
     display: grid;
-}
-
-#panel-projects {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    /* spacing between cards */
-    width: 100%;
-    justify-items: center;
-    /* <-- center cards in their columns  */
-    align-items: center;
 }
 
 #panel-projects.active-tab {
@@ -129,10 +129,11 @@ body {
 }
 
 #profile_photo {
-    width: 120px;
-    border: 3px solid rgba(50, 50, 50, 0.9);
+    width: 125px;
+    /* border: 5px solid rgba(50, 50, 50, 0.9); */
     border-radius: 50%;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    /* border-radius: var(--container-radius); */
+    box-shadow: var(--box-shadow);
 }
 
 .tab-contents {
@@ -140,7 +141,7 @@ body {
 }
 
 .tab-contents.active-tab {
-    display: block;
+    display: grid;
 }
 
 .tab-contents ul li {
@@ -155,7 +156,7 @@ body {
 
 .tab-titles {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 20px 0 40px;
 }
 
@@ -204,10 +205,6 @@ body {
 .skill-header {
     display: flex;
     gap: 8px;
-    /* justify-content: space-around;
-    font-size: 14px;
-    width:90%;
-    background:red; */
 }
 
 .skill-name {
@@ -234,4 +231,72 @@ body {
 
 .level.beyond {
     background: linear-gradient(to right, rgba(250, 250, 250, 0.5), rgba(255, 0, 0, 0) 100%);
+}
+
+/* Banner right panel Playground */
+
+.right-panel {
+    /* background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255, 0, 0, 0) 90%); */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: var(--container-radius);
+    /* border:1px solid black; */
+    /* border: 3px solid rgba(50, 50, 50, 0.9); */
+    padding: 10px;
+    color: black;
+    box-shadow: var(--box-shadow);
+    margin-right: 20px;
+}
+
+
+/* About  */
+
+
+#panel-about.active-tab {
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+#customer {
+    width: 150px;
+    border-radius: var(--container-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.row {
+    display: flex;
+    padding: 10px;
+}
+
+.acontent {
+    padding: 20px;
+}
+
+/* Project */
+
+.proj-card {
+    background: var(--card-bg);
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: var(--container-radius);
+    box-shadow: var(--box-shadow);
+    transition: 0.5s;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: var(--container-radius);
+    border-top-right-radius: var(--container-radius);
+    transition: 0.5s;
+}
+
+.proj-card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
