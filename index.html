@@ -1,180 +1,175 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149261162-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-149261162-1');
-    </script>
-
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Daniel Berger">
-    <meta name="google-site-verification" content="zWMFD_Y6VE-0UT-ABdiFlGV7g9tQ4av858gg0XxJLS4" />
-    <meta name="description" content="Portfolio of Daniel Berger. Coder, Design, Ideator and Nerd.">
-    <meta name="keywords" content="programmer, java, web developer, websites, bergercode, berger code, web designer, software engineer, html, html5, css, css3, jquery, brisbane">
-    <title>Daniel Berger's Portfolio</title>
+    <meta name="description" content="Portfolio of Daniel Berger. Cloud Support Engineer & Technologist.">
+    <title>Daniel Berger | Cloud Support Engineer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous">
 </head>
 
 <body>
-    <img id="logo" src="images/dbLogo.png" alt="">
-    <nav class="navbar">
-        <ul>
-            <li>
-                <a id="home-nav" class="activeNav" href="#home">HOME</a>
-            </li>
-            <li>
-                <a id="projects-nav" href="#projects">PROJECTS</a>
-            </li>
-            <li>
-                <a id="contact-nav" href="#contact">CONTACT</a>
-            </li>
-        </ul>
-    </nav>
-    <section id="home">
-        <article>
-            <h1>Hi, I'm Daniel.</h1>
-            <p>Coder | Designer | Nerd</p>
-        </article>
-        <div id="skills">
-            <div class="skills">
-                <i class="fas fa-code fa-2x"></i>
-                <ul>
-                    <li>
-                        <h2>Coding</h2>
-                    </li>
-                    <li>Java</li>
-                    <li>Javascript</li>
-                    <li>SQL</li>
-                    <li>Python</li>
-                </ul>
+    <!-- Background Elements -->
+    <!-- <div class="background-mesh"></div> -->
+    <!-- <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div> -->
+    <main class="glass-container">
+
+        <!-- Sidebar / Header -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-img-container">
+                    <img src="images/gibli.jpg" alt="Daniel Berger" class="profile-img">
+                </div>
+                <h1>Daniel Berger</h1>
+                <p class="subtitle">Cloud Support Engineer</p>
+
             </div>
-            <div class="skills">
-                <i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i>
 
-                <ul>
-                    <li>
-                        <h2>Design</h2>
-                    </li>
-                    <li>CSS3</li>
-                    <li>HTML5</li>
-                    <li>GIMP</li>
-                    <li>Inkscape</li>
-                </ul>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/danielberger1/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin fa-xl"></i></a>
+                <a href="mailto:daniel@bergercode.com" aria-label="Email"><i class="fas fa-envelope fa-xl"></i></a>
+                <a href="https://github.com/bergercode" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github fa-xl"></i></a>
             </div>
-            <div class="skills">
-                <i class="fas fa-jedi fa-2x"></i>
 
-                <ul>
-                    <li>
-                        <h2>Nerd....</h2>
-                    </li>
-                    <li>Git</li>
-                    <li>Tech Support</li>
-                    <li>Gaming</li>
-                </ul>
+            <nav class="nav-menu">
+                <button class="nav-btn active" data-tab="about">
+                    <i class="fas fa-user"></i> About
+                </button>
+                <button class="nav-btn" data-tab="certifications">
+                    <i class="fas fa-certificate"></i> Certifications
+                </button>
+                <button class="nav-btn" data-tab="projects">
+                    <i class="fas fa-code"></i> Projects
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Content Area -->
+        <section class="content-area">
+
+            <!-- About Tab -->
+            <div id="about" class="tab-content active">
+                <div class="content-header">
+                    <h2>Hello, I'm Daniel.</h2>
+                </div>
+                <div class="text-block">
+                    <p>I'm a technologist driven by curiosity, continuous learning, and a genuine love for solving
+                        problems with others.</p>
+                    <p class="breaker">&#10070;</p>
+                    <p>My background in customer service and technical support has given me a strong foundation in
+                        communication and teamwork, while my experience with troubleshooting spans Kubernetes, cloud
+                        platforms (AWS and GCP), web development, APIs, Linux, SQL, and more.</p>
+                    <p class="breaker">&#10070;</p>
+                    <p>I enjoy exploring new technologies, enhancing systems, and collaborating with teams to build
+                        solutions that make a real impact.</p>
+                </div>
             </div>
-        </div>
 
-    </section>
+            <!-- Certifications Tab -->
+            <div id="certifications" class="tab-content">
+                <div class="content-header">
+                    <h2>Certifications</h2>
+                </div>
+                <div class="grid-container">
+                    <!-- AWS -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="images/aws-certified-cloud-practitioner.png"
+                                alt="AWS Certified Cloud Practitioner">
+                        </div>
+                        <div class="card-info">
+                            <h3>AWS Certified Cloud Practitioner</h3>
+                            <p>Amazon Web Services</p>
+                        </div>
+                    </div>
+                    <!-- GCP -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="images/cloud-digital-leader-certification.png" alt="Google Cloud Digital Leader">
+                        </div>
+                        <div class="card-info">
+                            <h3>Cloud Digital Leader</h3>
+                            <p>Google Cloud Services</p>
+                        </div>
+                    </div>
+                    <!-- Kubernetes -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="images/kcna-kubernetes-and-cloud-native-associate.png"
+                                alt="Kubernetes and Cloud Native Associate">
+                        </div>
+                        <div class="card-info">
+                            <h3>Kubernetes and Cloud Native Associate</h3>
+                            <p>The Linux Foundation</p>
+                        </div>
+                    </div>
+                    <!-- Linux -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="images/lpic-1-certification.png" alt="LPIC-1 Linux Administrator">
+                        </div>
+                        <div class="card-info">
+                            <h3>Linux Certified Administrator</h3>
+                            <p>Linux Professional Institute</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div id="project-container">
-            <figure class="item">
-                <a href="https://bergercode.github.io/tribute-page/" target="_blank">
-                    <img src="images/bach.jpg" alt="Bach Tribute Page">
-                </a>
-                <figcaption>
-                    <h3>Bach Tribute</h3>
-                    <p>Tribute page for Johann Sebastian Bach</p>
-                </figcaption>
-            </figure>
-            <figure class="item">
-                <a href="https://boiling-plateau-39569.herokuapp.com/campgrounds" target="_blank">
-                    <img src="images/yelpcamp.jpg" alt="Yelp Camp Site">
-                </a>
-                <figcaption>
-                    <h3>Yelp Camp</h3>
-                    <p>Fictional camping website.</p>
-                </figcaption>
-            </figure>
-            <figure class="item">
-                <a href="https://bergercode.github.io/computer-quiz/" target="_blank">
-                    <img src="images/drFrankenstein.JPG" alt="Dr Frankenstein Quiz">
-                </a>
+            <!-- Projects Tab -->
+            <div id="projects" class="tab-content">
+                <div class="content-header">
+                    <h2>Projects</h2>
+                </div>
+                <div class="grid-container projects-grid">
 
-                <figcaption>
-                    <h3>Dr Frankenstein's Computer Quiz</h3>
-                    <p>Website to teach students about computers.</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div id="github">
-            <a href="https://github.com/bergercode" target="_blank">
-                <i class="fab fa-github-square fa-4x"></i>
-            </a>
-            <p>Check out more on my Github...</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you would like to contact me about a future project please click one of the links below...</p>
-        <div id="contact-links">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/danielberger1/" target="_blank">Linkedin</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/danielberger1/" target="_blank">
-                        <i class="fab fa-linkedin fa-4x"></i>
+                    <a href="#" class="card project-card">
+                        <div class="project-img" style="background-image: url('images/AIWine.png');">
+                            <div class="overlay">Coming Soon</div>
+                        </div>
+                        <div class="card-info">
+                            <h3>AI Menu Sommelier</h3>
+                            <p>AI-powered wine recommendations.</p>
+                        </div>
                     </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="mailto:bergercodedan@gmail.com">Email</a>
-                </li>
-                <li>
-                    <a href="mailto:bergercodedan@gmail.com">
-                        <i class="fas fa-envelope-square fa-4x"></i>
+
+                    <a href="https://bergercode.github.io/computer-quiz/" target="_blank" class="card project-card">
+                        <div class="project-img" style="background-image: url('images/drFrankenstein.JPG');"></div>
+                        <div class="card-info">
+                            <h3>Computer Quiz</h3>
+                            <p>Interactive hardware quiz.</p>
+                        </div>
                     </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="https://github.com/bergercode" target="_blank">Github</a>
-                </li>
-                <li>
-                    <a href="https://github.com/bergercode" target="_blank">
-                        <i class="fab fa-github-square fa-4x"></i>
+
+                    <a href="https://bergercode.github.io/tribute-page/" target="_blank" class="card project-card">
+                        <div class="project-img" style="background-image: url('images/bach.jpg');"></div>
+                        <div class="card-info">
+                            <h3>Bach Tribute</h3>
+                            <p>A tribute to J.S. Bach.</p>
+                        </div>
                     </a>
-                </li>
-            </ul>
-        </div>
-        <footer>
-            Copyright &copy; 2019 by Daniel Berger
-        </footer>
-<!--         <img id="bye-avatar" src="images/myAvatarBye.png" alt="Daniel waving goodbye."> -->
-    </section>
 
-    <img id="my-avatar" src="images/myAvatar.png" alt="Daniel waving at you.">
+                </div>
+            </div>
 
+        </section>
+    </main>
 
-
-    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
