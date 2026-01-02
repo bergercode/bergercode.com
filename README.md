@@ -13,7 +13,7 @@
 <hr>
 
 <p>
-  Welcome to the source code for my personal portfolio website. This project serves as a central hub to showcase my professional background, certifications, and technical projects. Currently in the process of updating for 2025.
+  Welcome to the source code for my personal portfolio website. This project serves as a central hub to showcase my professional background, certifications, and technical projects.
 </p>
 
 ## <a name="design"></a>🎨 Design
