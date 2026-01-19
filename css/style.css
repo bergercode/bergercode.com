@@ -387,7 +387,6 @@ body {
     color: var(--text-muted);
     margin-bottom: 1.5rem;
     max-width: 800px;
-    text-align: left;
 }
 
 /* Keyframes */
